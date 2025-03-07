@@ -23,6 +23,8 @@ let package = Package(
     targets: [
         .target(
             name: "PlasgateAuthSDK",
-            dependencies: []),
-    ]
+            dependencies: [],
+            exclude: ["Examples"]),  // Exclude Examples directory from the target
+    ],
+    swiftLanguageVersions: [.v5]
 )
